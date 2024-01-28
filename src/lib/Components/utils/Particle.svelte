@@ -26,6 +26,7 @@
 		particlesConfig.particles.color.value = '#FFF';
 		particlesConfig.particles.links.color = '#FFF';
 	}
+    
 	onMount(async () => {
 		const module = await import('@tsparticles/svelte');
 		ParticlesComponent = module.default;
