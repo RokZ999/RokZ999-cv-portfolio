@@ -10,7 +10,7 @@
 </script>
 
 <Particle/>
-<div class="card card-hover overflow-hidden p-4 md:p-8">
+<div class="card card-hover overflow-hidden p-4 md:p-8 border-2 dark:border-gray-200 border-gray-800 variant-glass-surface">
 	<div class="grid grid-cols-1 md:grid-cols-2 items-center gap-4">
 		<div class="justify-self-center md:justify-self-end">
 			<Avatar src={url_profile_pic} width="min-w-1/4" rounded="rounded-full" />
