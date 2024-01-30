@@ -15,7 +15,7 @@
 	//Icons
 	import Iconify from '@iconify/iconify';
 	import { page } from '$app/stores';
-	import Particle from '$lib/Components/utils/Particle.svelte'
+	import Particle from '$lib/Components/utils/Particle.svelte';
 
 	hljs.registerLanguage('xml', xml); // for HTML
 	hljs.registerLanguage('css', css);
@@ -37,24 +37,19 @@
 	</svelte:fragment>
 	<svelte:fragment slot="sidebarLeft">
 		<AppRail>
-			
-
-
-			<AppRailAnchor  href="/" selected={$page.url.pathname === '/'}>
+			<AppRailAnchor href="/" selected={$page.url.pathname === '/'}>
 				<svelte:fragment slot="lead">
 					<span class="iconify" data-icon="eva:home-outline"></span>
 				</svelte:fragment>
 				<span>About me</span>
 			</AppRailAnchor>
 
-
 			<AppRailAnchor href="/experiences" selected={$page.url.pathname === '/experiences'}>
 				<svelte:fragment slot="lead">
-					<span  class="iconify" data-icon="eva:briefcase-outline"></span>
+					<span class="iconify" data-icon="eva:briefcase-outline"></span>
 				</svelte:fragment>
 				<span>Experiences</span>
 			</AppRailAnchor>
-
 			<AppRailAnchor href="/projects" selected={$page.url.pathname === '/projects'}>
 				<svelte:fragment slot="lead">
 					<span class="iconify" data-icon="eva:folder-outline"></span>
@@ -80,10 +75,8 @@
 	</svelte:fragment>
 
 	<svelte:fragment>
-		
-	
 		<div class="m-8 flex justify-center">
-			<Particle/>
+			<Particle />
 			<slot />
 		</div>
 	</svelte:fragment>

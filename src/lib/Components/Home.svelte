@@ -5,13 +5,13 @@
 
 	import Typewriter from 'svelte-typewriter';
 
-
-
 	let url_profile_pic = 'https://avatars.githubusercontent.com/u/71169333?v=4';
 	let loop_text = ['Software Dev 🖥️', 'Fluent in Java ☕', 'Learning Rust 🦀'];
 </script>
 
-<div class="card card-hover overflow-hidden p-4 md:p-8 border-2 dark:border-gray-200 border-gray-800 variant-glass-surface">
+<div
+	class="card card-hover overflow-hidden p-4 md:p-8 border-2 dark:border-gray-200 border-gray-800 variant-glass-surface"
+>
 	<div class="grid grid-cols-1 md:grid-cols-2 items-center gap-4">
 		<div class="justify-self-center md:justify-self-end">
 			<Avatar src={url_profile_pic} width="min-w-1/4" rounded="rounded-full" />
@@ -38,16 +38,15 @@
 			</div>
 
 			<div class="flex flex-col space-y-4 md:space-y-0 md:flex-row md:space-x-4">
-                <button type="button" class="btn variant-filled mt-4 md:mt-0">
-                    <span class="iconify" data-icon="eva:briefcase-outline"></span>
-                    <p>Experiences</p>
-                </button>
-                <button type="button" class="btn variant-filled mt-4 md:mt-0">
-                    <span class="iconify" data-icon="eva:folder-outline"></span>
-                    <p>Projects</p>
-                </button>
-            </div>
-            
+				<button type="button" class="btn variant-filled mt-4 md:mt-0">
+					<span class="iconify" data-icon="eva:briefcase-outline"></span>
+					<p>Experiences</p>
+				</button>
+				<button type="button" class="btn variant-filled mt-4 md:mt-0">
+					<span class="iconify" data-icon="eva:folder-outline"></span>
+					<p>Projects</p>
+				</button>
+			</div>
 		</div>
 	</div>
 </div>
