@@ -2,10 +2,10 @@
 	import { Avatar } from '@skeletonlabs/skeleton';
 	import InfinityAnimation from '$lib/Components/utils/InfinityAnimation.svelte';
 	import MyTime from './utils/MyTime.svelte';
+	import pfp from '$lib/images/rokz-cv-portfolio-home-picture.png';
 
 	import Typewriter from 'svelte-typewriter';
 
-	let url_profile_pic = 'https://avatars.githubusercontent.com/u/71169333?v=4';
 	let loop_text = ['Software Dev 🖥️', 'Fluent in Java ☕', 'Learning Rust 🦀'];
 </script>
 
@@ -14,7 +14,7 @@
 >
 	<div class="grid grid-cols-1 md:grid-cols-2 items-center gap-4">
 		<div class="justify-self-center md:justify-self-end">
-			<Avatar src={url_profile_pic} width="min-w-1/4" rounded="rounded-full" />
+			<Avatar src={pfp} width="min-w-1/4" rounded="rounded-full" />
 		</div>
 
 		<div class="text-center md:text-left">
@@ -38,14 +38,24 @@
 			</div>
 
 			<div class="flex flex-col space-y-4 md:space-y-0 md:flex-row md:space-x-4">
-				<button type="button" class="btn variant-filled mt-4 md:mt-0">
+				<a
+					href="experiences"
+					data-sveltekit-preload-data="hover"
+					type="button"
+					class="btn variant-filled mt-4 md:mt-0"
+				>
 					<span class="iconify" data-icon="eva:briefcase-outline"></span>
 					<p>Experiences</p>
-				</button>
-				<button type="button" class="btn variant-filled mt-4 md:mt-0">
+				</a>
+				<a
+					href="projects"
+					data-sveltekit-preload-data="hover"
+					type="button"
+					class="btn variant-filled mt-4 md:mt-0"
+				>
 					<span class="iconify" data-icon="eva:folder-outline"></span>
 					<p>Projects</p>
-				</button>
+				</a>
 			</div>
 		</div>
 	</div>

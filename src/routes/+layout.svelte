@@ -16,6 +16,7 @@
 	import Iconify from '@iconify/iconify';
 	import { page } from '$app/stores';
 	import Particle from '$lib/Components/utils/Particle.svelte';
+	import AnimateRoute from '$lib/Components/utils/AnimateRoute.svelte';
 
 	hljs.registerLanguage('xml', xml); // for HTML
 	hljs.registerLanguage('css', css);
@@ -43,7 +44,6 @@
 				</svelte:fragment>
 				<span>About me</span>
 			</AppRailAnchor>
-
 			<AppRailAnchor href="/experiences" selected={$page.url.pathname === '/experiences'}>
 				<svelte:fragment slot="lead">
 					<span class="iconify" data-icon="eva:briefcase-outline"></span>
@@ -77,7 +77,9 @@
 	<svelte:fragment>
 		<div class="m-8 flex justify-center">
 			<Particle />
-			<slot />
+			<AnimateRoute>
+				<slot />
+			</AnimateRoute>
 		</div>
 	</svelte:fragment>
 </AppShell>

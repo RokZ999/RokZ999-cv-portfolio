@@ -19,7 +19,6 @@
 		'Bootstrap',
 		'AJAX',
 		'PL/SQL'
-		// Added jQuery, HTML, CSS, JavaScript, and Bootstrap to the original list
 	];
 </script>
 
