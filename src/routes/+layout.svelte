@@ -15,6 +15,7 @@
 	//Icons
 	import Iconify from '@iconify/iconify';
 	import { page } from '$app/stores';
+	import Particle from '$lib/Components/utils/Particle.svelte'
 
 	hljs.registerLanguage('xml', xml); // for HTML
 	hljs.registerLanguage('css', css);
@@ -36,16 +37,20 @@
 	</svelte:fragment>
 	<svelte:fragment slot="sidebarLeft">
 		<AppRail>
-			<AppRailAnchor href="/" selected={$page.url.pathname === '/'}>
+			
+
+
+			<AppRailAnchor  href="/" selected={$page.url.pathname === '/'}>
 				<svelte:fragment slot="lead">
 					<span class="iconify" data-icon="eva:home-outline"></span>
 				</svelte:fragment>
 				<span>About me</span>
 			</AppRailAnchor>
 
+
 			<AppRailAnchor href="/experiences" selected={$page.url.pathname === '/experiences'}>
 				<svelte:fragment slot="lead">
-					<span class="iconify" data-icon="eva:briefcase-outline"></span>
+					<span  class="iconify" data-icon="eva:briefcase-outline"></span>
 				</svelte:fragment>
 				<span>Experiences</span>
 			</AppRailAnchor>
@@ -58,7 +63,16 @@
 			</AppRailAnchor>
 
 			<svelte:fragment slot="trail">
-				<AppRailAnchor href="/" target="_blank" title="Account">
+				<AppRailAnchor href="https://www.linkedin.com/in/rokz999/">
+					<svelte:fragment slot="lead">
+						<span class="iconify" data-icon="basil:linkedin-solid"></span>
+					</svelte:fragment>
+					<span>LinkedIn</span>
+				</AppRailAnchor>
+				<AppRailAnchor href="https://github.com/RokZ999">
+					<svelte:fragment slot="lead">
+						<span class="iconify" data-icon="mingcute:github-fill"></span>
+					</svelte:fragment>
 					<span>GitHub</span>
 				</AppRailAnchor>
 			</svelte:fragment>
@@ -66,7 +80,10 @@
 	</svelte:fragment>
 
 	<svelte:fragment>
+		
+	
 		<div class="m-8 flex justify-center">
+			<Particle/>
 			<slot />
 		</div>
 	</svelte:fragment>

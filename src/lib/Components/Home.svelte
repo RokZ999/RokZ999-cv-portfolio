@@ -1,15 +1,16 @@
 <script>
 	import { Avatar } from '@skeletonlabs/skeleton';
 	import InfinityAnimation from '$lib/Components/utils/InfinityAnimation.svelte';
-	import Typewriter from 'svelte-typewriter';
 	import MyTime from './utils/MyTime.svelte';
-	import Particle from './utils/Particle.svelte';
+
+	import Typewriter from 'svelte-typewriter';
+
+
 
 	let url_profile_pic = 'https://avatars.githubusercontent.com/u/71169333?v=4';
 	let loop_text = ['Software Dev 🖥️', 'Fluent in Java ☕', 'Learning Rust 🦀'];
 </script>
 
-<Particle/>
 <div class="card card-hover overflow-hidden p-4 md:p-8 border-2 dark:border-gray-200 border-gray-800 variant-glass-surface">
 	<div class="grid grid-cols-1 md:grid-cols-2 items-center gap-4">
 		<div class="justify-self-center md:justify-self-end">
