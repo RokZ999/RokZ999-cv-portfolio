@@ -1,4 +1,6 @@
 <script>
+	import src from '$lib/images/work.jpg';
 </script>
 
-Todo
+<img {src} alt="meme" />
+```
